@@ -36,24 +36,39 @@ section {
     border-radius: 20px;
     overflow: hidden;
     text-align: center;
+    position: relative;
 }
 
-
-.image-victor { 
-    width: 100px;
-    height: 100px;
-    margin: -50px auto 30px auto;
-    border: 5px solid white;
-    overflow: hidden;
+.card-body {
+    margin: 10px;
+    padding: 10px;
 }
-
 
 .image-victor img {
-    width: 100%;
-    height: auto;
-    display: block;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 5px solid #FFF;
+    margin-top: -100px;
+}
+
+
+.name-age {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.age {
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+.city { 
+    color: hsl(0, 0%, 59%);
+    font-size: 15px;
+    margin: 10px;
+    font-weight: 400;
 }
 
 .card-footer { 
@@ -61,4 +76,58 @@ section {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 10px 30px;
+    margin: 20px 0px;
+    border-top: 1px solid hsl(0, 0%, 75%);
+}
+
+.number {
+    font-size: 18px;
+    margin: 15px 0 5px 0;
+    
+}
+
+.meta {
+    font-size: 14px;
+    color: hsl(0, 0%, 59%);
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.attribution {
+    margin-top: 100px;
+}
+
+
+/* Circles Background*/
+
+.circles .c1,
+.circles .c2 {
+    position: absolute;
+    width: 800px;
+    animation: 2s circles forwards;
+    opacity: 0;
+}
+
+.circles .c1 {
+    top: -400px;
+    left: -200px;
+    transform: translate(-100px, -50px);
+}
+
+.circles .c2 {
+    bottom: -400px;
+    right: -200px;
+    opacity: 0.5;
+    transform: translate(100px, 50px);
+}
+
+@keyframes circles{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
 }

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&family=Outfit:wght@300;500;700&family=Poppins:wght@200;300;400;500&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@300;400;500&display=swap');
+
+
+:root {
+    font-size: 18px;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    color: hsl(229, 23%, 23%);
+
+}
+
+section {
+    background-color: hsl(185, 75%, 39%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+
+.card { 
+    width: 350px;
+    background-color: #FFF;
+    border-radius: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+
+.image-victor { 
+    width: 100px;
+    height: 100px;
+    margin: -50px auto 30px auto;
+    border: 5px solid white;
+    overflow: hidden;
+}
+
+
+.image-victor img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.card-footer { 
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
